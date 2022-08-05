@@ -42,5 +42,29 @@ println!("Pallindrome");
  
  }
 
+    
+    **Fibonacci Sequence**
+    
+    fn main() {
+    fib_seq(10);
+   
+}
+fn fib_seq(n:i128){
+   let mut a:i128 = 0; 
+   let mut b:i128=1;
+   let mut c:i128;
+   let mut i:i128=0;
+   
+//    println!("{:?}",c);
+   for i in 0..n{
+    c= a+b;
+    a=b;
+    b=c;
+    print!("{:?}\n ",c);
+   }
+   
+
+
+}
 
   
