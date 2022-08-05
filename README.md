@@ -45,6 +45,25 @@ println!("Pallindrome");
      }
  
  }
+ 
+negative-inputs 
+----------------
+fn main(){
+
+let x:i32= -121;
+// if x.to_string() == x.to_string().chars().rev().collect::<String>(){
+    let (mut y,z):(String,String);
+y =x.to_string();
+z= x.to_string().chars().rev().collect::<String>();
+println!("y:{}",y);
+
+println!("z:{}",z);
+if y==z {
+    println!("Pallindrome");
+}else{
+    println!("Not Pallindrome");
+}
+}
 
 
   
