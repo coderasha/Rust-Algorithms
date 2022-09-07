@@ -1,0 +1,26 @@
+use std::io;
+use rand;
+fn main(){
+    println!("Enter the number ");
+let mut input = String::new(); 
+
+io::stdin().read_line(&mut input);
+let mut int_input: i64 = input.trim().parse().unwrap();
+print!("{:?}",int_input);
+
+    let num = rand::random::<i64>();
+    println!("{} is random",num);
+    lottery_win(int_input, num);
+    
+
+}
+fn lottery_win(x:i64 , num:i64){
+
+    if x == num{
+        println!("Winner");
+    }else if x > num{
+        println!("{} is greater than random",x);
+    }else {
+        println!("{} is less than random",x);
+    }
+}
