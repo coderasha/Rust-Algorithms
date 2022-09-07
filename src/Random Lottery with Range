@@ -1,7 +1,7 @@
 
 use rand ::{thread_rng,Rng};
 fn main () {
- let mut random_num = rand::thread_rng().gen_rng(0..101);
+ let mut random_num = rand::thread_rng().gen_range(0..101);
  println!("{}",random_num);
 
 }
