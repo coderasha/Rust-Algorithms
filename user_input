@@ -1,0 +1,19 @@
+use std::io;
+fn main() {
+    let mut input = String::new();
+    println!("Enter 1st Input here");
+   io::stdin().read_line(& mut input).expect("not a string input");
+    let mut num:i32 = input.trim().parse().expect("not an integer");
+
+    let mut input2 = String::new();
+    println!("Enter 2ndt Input here");
+   io::stdin().read_line(& mut input2).expect("not a string input");
+    let mut num2:i32 = input2.trim().parse().expect("not an integer");
+
+    let mut input3 = String::new();
+    println!("Enter 3rd Input here");
+   io::stdin().read_line(& mut input3).expect("not a string input");
+    let mut num3:i32 = input3.trim().parse().expect("not an integer");
+    
+    println!("The sum of  {:?} +{:?} +{:?} is {:?} ",num,num2,num3, num+num2+num3);
+}
